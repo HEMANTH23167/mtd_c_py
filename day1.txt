@@ -1,0 +1,53 @@
+MTD COMPITATIVE PROGRAMMING
+
+DAY1 THURSDAY 06/03/2025
+
+IMPORTANT GIT COMMANDS  
+
+ git status
+// to know the current status of our REPO
+
+ git clone <url>
+ // to download a repository
+ 
+git clone https://github.com/neelmyna/vvce_mar25
+// example to download the repository
+
+git pull origin main
+// command to download the updated repository from the server to the local machine 
+
+to make our computer recognise our git account , we must run these 2 conguration commands:
+ git config --global user.name "HEMANTH23167"
+ git config --global user.email "hemanthhrh231672@gmail.com"
+ 
+
+Login to github
+right top corner click on your profile
+scroll down and click settings
+next window , scroll down, on left bottom corner , click developer settings 
+next window , on top left , click personal acces tokens, click again on token classic 
+next window, click on generate new token button and select tokens calssic
+(now u may be asked to enter password)
+next, add a note for the new PAT we are creating
+select Expiry -> no expiration
+select the top check box named repo 
+scroll down fully and click the green button(generate token)
+now , copy the PAt 
+come to your gmail and mail the PAT to yourself or to one of your own account (mail subject: GIT PAT) 
+
+now let us sync our remote repo with Local Repo 
+in other words, we are going to CLONE our Repo using THE PAT 
+by doing so, we can perform read-write operations on our remote repo without having to authenticate everytime.
+
+git clone https://<PAT>@github.com/HEMANTH23167/mtd_c_py
+
+commands local required to upload files from local repo to remote: 
+
+git add .
+ // Git will mark all the files that need to be updated 
+ 
+ git commit -m "notes file of the mtd training is added" 
+ // git creates an object that will include all the files to be uploaded and also it is secured (encription) 
+ 
+ git push origin main 
+ //
